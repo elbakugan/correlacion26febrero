@@ -113,6 +113,8 @@ resultados = correlation(dist_ncuent)
 resultados
 ```
 #D
+En el ejercicio anterior sacamos el valor de p dando como resultado p-value = 0.0001265, lo que significa, que del 95% solo un 5% es la probabilidad de que la correlacion sea al azar, en nuestro caso, es menor a 0,05 el valor de p, por lo que cabe casi ninguna posibilidad de que la correlacion sea al azar.
+ 
 
 #E
 ```{r echo=TRUE}
@@ -123,5 +125,9 @@ ggscatter(dist_ncuent, x = "distancia", y = "n_piezas",
           xlab = "distancia", ylab = "n_piezas")
 ```
 #F
+Es significativa la correlacion porque el índice de probabilidad de que la correlación entre estas variables sea al azar es muy pequeño.
+
+#G
+Lo apropiado sería obtener el mayor número de muestras posibles, con un muestreo tan superficial no creo que sea posible, podría causar sesgos, aunque en este caso cumple con el pensamiento lógico de que los materiales se encuentran más concentrados cerca de su fuente de orígen.
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
